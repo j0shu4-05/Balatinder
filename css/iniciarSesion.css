@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: balatro;
+    src: url(../balatro.otf/balatro.otf);
+}
+
+body {
+    color: rgb(255, 255, 255);
+    font-family: balatro, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-image: url('../images/minimalistic-wallpapers-v0-mf3kc4evcztd1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header img {
+    max-width: 380px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+form {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 350px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+
+    /* Transicion de entrada del formulario*/
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+form label {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+form input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    font-family: balatro;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 12px;
+    background-color: #53e140;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: balatro;
+}
+
+form button:hover {
+    background-color: #19ac06;
+}
+
+@media (max-width: 500px) {
+    form {
+        padding: 20px;
+        width: 90%;
+    }
+
+    header img {
+        width: 80%;
+    }
+}

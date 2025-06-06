@@ -1,0 +1,107 @@
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    @font-face {
+        font-family: balatro;
+        src: url('../balatro.otf/balatro.otf');
+    }
+
+    body {
+        font-family: balatro, sans-serif;
+        background-image: url('../images/minimalistic-wallpapers-v0-mf3kc4evcztd1.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white;
+        min-height: 100vh;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: auto;
+    }
+
+    .profile {
+        margin: auto;
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 20px;
+        padding: 30px 20px;
+        max-width: 450px;
+        width: 100%;
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+        text-align: center;
+        animation: fadeIn 0.8s ease-in-out;
+    }
+
+    .profile img {
+        width: 140px;
+        border-radius: 50%;
+        border: 3px solid white;
+        object-fit: cover;
+        aspect-ratio: 1;
+        margin-bottom: 20px;
+    }
+
+    .profile h1 {
+        font-size: 26px;
+    }
+
+    .profile p {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .section {
+        margin-top: 25px;
+        text-align: left;
+    }
+
+    .section h2 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .section textarea,
+    .section input {
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        font-family: balatro;
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        background-color: #53e140;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        margin-top: 15px;
+        cursor: pointer;
+        font-family: balatro;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+        background-color: #19ac06;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
